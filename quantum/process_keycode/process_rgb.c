@@ -162,7 +162,7 @@ bool process_rgb(const uint16_t keycode, const keyrecord_t *record) {
                 rgblight_mode(RGBLIGHT_MODE_STATIC_LIGHT);
 #endif
 #if defined(RGB_MATRIX_ENABLE) && !defined(RGB_MATRIX_DISABLE_KEYCODES)
-                rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
+                //rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
 #endif
                 return false;
             case RGB_MODE_BREATHE:
@@ -170,7 +170,7 @@ bool process_rgb(const uint16_t keycode, const keyrecord_t *record) {
                 handleKeycodeRGBMode(RGBLIGHT_MODE_BREATHING, RGBLIGHT_MODE_BREATHING_end);
 #endif
 #if defined(RGB_MATRIX_ENABLE) && !defined(RGB_MATRIX_DISABLE_KEYCODES) && defined(ENABLE_RGB_MATRIX_BREATHING)
-                rgb_matrix_mode(RGB_MATRIX_BREATHING);
+                //rgb_matrix_mode(RGB_MATRIX_BREATHING);
 #endif
                 return false;
             case RGB_MODE_RAINBOW:
@@ -186,7 +186,7 @@ bool process_rgb(const uint16_t keycode, const keyrecord_t *record) {
                 handleKeycodeRGBMode(RGBLIGHT_MODE_RAINBOW_SWIRL, RGBLIGHT_MODE_RAINBOW_SWIRL_end);
 #endif
 #if defined(RGB_MATRIX_ENABLE) && !defined(RGB_MATRIX_DISABLE_KEYCODES) && defined(ENABLE_RGB_MATRIX_CYCLE_PINWHEEL)
-                rgb_matrix_mode(RGB_MATRIX_CYCLE_PINWHEEL);
+                //rgb_matrix_mode(RGB_MATRIX_CYCLE_PINWHEEL);
 #endif
                 return false;
             case RGB_MODE_SNAKE:
